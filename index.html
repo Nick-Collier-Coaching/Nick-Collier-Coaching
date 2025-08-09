@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nick Collier Coaching</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
   <style>
     /* Reset */
     * {
@@ -13,139 +13,84 @@
       box-sizing: border-box;
     }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      background: #fff;
-      color: #111;
+      font-family: 'Open Sans', sans-serif;
+      background: #f5f7fa;
+      color: #222;
       line-height: 1.6;
       font-weight: 400;
       padding: 0 20px;
     }
     header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 0;
-      border-bottom: 1px solid #eee;
+      padding: 15px 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       font-weight: 700;
       font-size: 1.25rem;
       letter-spacing: 1.2px;
       text-transform: uppercase;
+      z-index: 1000;
     }
     nav a {
-      color: #111;
+      color: #0077cc;
       text-decoration: none;
-      margin-left: 24px;
+      margin-left: 28px;
       font-weight: 600;
-      font-size: 0.95rem;
+      font-size: 1rem;
+      transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #0077cc;
+      color: #005fa3;
     }
     main {
       max-width: 900px;
-      margin: 40px auto;
+      margin: 100px auto 60px auto;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.4em;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 0.5em;
       font-weight: 700;
       letter-spacing: 1px;
-    }
-    h2 {
-      font-weight: 600;
-      margin: 2em 0 1em 0;
-      font-size: 1.5rem;
-      border-left: 4px solid #0077cc;
-      padding-left: 12px;
       color: #0077cc;
     }
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      margin: 2em 0 1em 0;
+      font-size: 1.8rem;
+      border-left: 6px solid #0077cc;
+      padding-left: 14px;
+      color: #005fa3;
+    }
     p {
-      font-size: 1.1rem;
-      margin-bottom: 1em;
-      color: #333;
+      font-size: 1.15rem;
+      margin-bottom: 1.25em;
+      color: #444;
     }
     .btn-contact {
       display: inline-block;
       background: #0077cc;
       color: #fff;
-      padding: 12px 28px;
-      border-radius: 4px;
+      padding: 14px 32px;
+      border-radius: 8px;
       text-decoration: none;
-      font-weight: 600;
-      margin-top: 1em;
-      transition: background-color 0.3s ease;
+      font-weight: 700;
+      margin-top: 1.5em;
+      box-shadow: 0 4px 10px rgba(0,119,204,0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
     .btn-contact:hover {
       background: #005fa3;
+      box-shadow: 0 6px 14px rgba(0,95,163,0.6);
     }
-    footer {
-      text-align: center;
-      padding: 24px 0;
-      font-size: 0.9rem;
-      color: #888;
-      border-top: 1px solid #eee;
-      margin-top: 60px;
-    }
-    /* Responsive */
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        font-size: 1.1rem;
-      }
-      nav {
-        margin-top: 12px;
-      }
-      nav a {
-        margin-left: 12px;
-        font-size: 0.9rem;
-      }
-      main {
-        margin: 20px auto;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo">Nick Collier Coaching</div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="hero">
-      <h1>Expert Coaching in Canoe Slalom & Kayak Cross</h1>
-      <p>Unlock your potential with tailored coaching from a U23 World Champion and experienced coach. Improve technique, strength, and race strategy.</p>
-      <a href="#contact" class="btn-contact">Book a Session</a>
-    </section>
-
-    <section id="services">
-      <h2>Coaching Services</h2>
-      <p><strong>Private Sessions:</strong> One-on-one technical coaching for paddlers of all levels, focusing on stroke technique, course navigation, and race tactics.</p>
-      <p><strong>Group Clinics:</strong> Intensive group training sessions to develop skills, endurance, and teamwork for club or regional teams.</p>
-      <p><strong>Race Day Coaching:</strong> Personalised support during competitions to optimise performance under pressure.</p>
-    </section>
-
-    <section id="about">
-      <h2>About Nick Collier</h2>
-      <p>Nick is the 2025 U23 Kayak Cross World Champion and 2023 U23 Vice-World Champion. With years of coaching experience at club and national levels, he combines elite athletic insight with practical training to help paddlers reach their best.</p>
-      <p>Passionate about whitewater sports, Nick emphasises safe, effective, and enjoyable coaching for all ages and abilities.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Get In Touch</h2>
-      <p>If you’re ready to improve your paddling or want to learn more, contact Nick for coaching availability and rates.</p>
-      <p>Email: <a href="mailto:nick@example.com">nick@example.com</a></p>
-      <p>Phone: <a href="tel:+64123456789">+64 12 345 6789</a></p>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Nick Collier Coaching. All rights reserved.
-  </footer>
-</body>
-</html>
+    f
